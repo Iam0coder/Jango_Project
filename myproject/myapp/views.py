@@ -1,8 +1,9 @@
 # myapp/views.py
 from django.shortcuts import render
 
+
 def index(request):
-    data = {'caption': "CatDjango"}
+    data = {'caption': "Django Project"}
     return render(request, 'myapp/index.html', data)
 
 def new(request):

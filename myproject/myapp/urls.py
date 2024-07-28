@@ -1,8 +1,10 @@
 # myapp/urls.py
-from django.urls import path
+from django.urls import path, include
+from django.contrib import admin
 from . import views
 
 urlpatterns = [
+
     path('', views.index, name='home'),
     path('new', views.new, name='page2'),
     path('page3', views.page3, name='page3'),
