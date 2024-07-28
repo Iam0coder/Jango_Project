@@ -1,9 +1,15 @@
-from django.http import HttpResponse
+# myapp/views.py
+from django.shortcuts import render
 
+def index(request):
+    data = {'caption': "CatDjango"}
+    return render(request, 'myapp/index.html', data)
 
-def data_view(request):
-    return HttpResponse("<h1>Data Page</h1><p>This is the data page.</p>")
+def new(request):
+    return render(request, 'myapp/new.html')
 
+def page3(request):
+    return render(request, 'myapp/page3.html')
 
-def test_view(request):
-    return HttpResponse("<h1>Test Page</h1><p>This is the test page.</p>")
+def page4(request):
+    return render(request, 'myapp/page4.html')

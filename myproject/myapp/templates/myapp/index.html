@@ -1,0 +1,11 @@
+<!-- myapp/templates/myapp/index.html -->
+{% extends 'myapp/layout.html' %}
+
+{% block title %}
+<title>Первая страница на django</title>
+{% endblock %}
+
+{% block content %}
+<h1>Добро пожаловать на сайт {{ caption }}!</h1>
+<p>Это первая страница нашего проекта на Django.</p>
+{% endblock %}
